@@ -1,2 +1,0 @@
-proovin uhendada git 
-
