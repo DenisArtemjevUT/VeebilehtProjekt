@@ -26,6 +26,16 @@ header {
   border-radius: 3px;         /* чуть закруглённые углы */
 }
 
+
+main {
+  margin-top: 80px; /* расстояние между header и первой кнопкой */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* выравнивает кнопки по центру */
+  gap: 20px; /* расстояние между кнопками */
+  margin-right:250px; /* отступ слева от края страницы */
+}
+
 a.button {
   display: block;
   background-color: #d9d9d9;
@@ -34,10 +44,9 @@ a.button {
   padding: 15px 15px;
   font-size: 20px;
   text-align: left;
-  width: 750px;
+  width: 900px;
   cursor: pointer;
   box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-  margin: 20px;
   text-decoration: none; /* убирает подчёркивание */
   color: black;          /* делает текст чёрным */
 }
