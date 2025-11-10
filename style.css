@@ -1,0 +1,27 @@
+/* Фон всей страницы */
+body {
+  background-color: #f5f5f5;
+  font-family: Arial, sans-serif;
+}
+
+/* Заголовок */
+h1 {
+  color: #333;
+  text-align: center;
+}
+
+/* Абзац */
+p {
+  color: #555;
+  text-align: center;
+}
+
+header{
+    background-color: #79c7e3;
+    color:white;
+    text-align: center;
+    padding: 40px 0 ;
+    font-size: 28px;
+    box-shadow: 0 2px 6pc;
+    
+}
