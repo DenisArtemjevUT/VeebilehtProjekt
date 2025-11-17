@@ -1,22 +1,16 @@
-/* Фон всей страницы */
+/* Общие стили — работают на всех страницах */
 body {
-  background-color: #f5f5f5;
-  font-family: Arial, sans-serif;
+    font-family: Arial, sans-serif;
 }
 
-/* Заголовок */
-h1 {
-  color: #333;
-  text-align: center;
+/* Уникальные столько для ГЛАВНОЙ страницы, peamine leht */
+.home_page {
+    background-color: #f0f7ff;
+
 }
 
-/* Абзац */
-p {
-  color: #555;
-  text-align: center;
-}
 
-header {
+.home_page header{
   background-color: #79c7e3;  /* голубой фон */
   color: white;               /* белый текст */
   text-align: center;         /* текст по центру */
@@ -26,42 +20,58 @@ header {
   border-radius: 3px;         /* чуть закруглённые углы */
 }
 
+.home_page .buttonProgaI{
 
-main {
-  margin-top: 80px; /* расстояние между header и первой кнопкой */
-  display: flex;
-  flex-direction: column;
-  align-items: center; /* выравнивает кнопки по центру */
-  gap: 20px; /* расстояние между кнопками */
-  margin-right:250px; /* отступ слева от края страницы */
+  display: block;              /* делает элемент блочным — занимает всю строку */
+  background-color: #d9d9d9;   /* цвет фона */
+  border: none;                /* убирает рамку */
+  border-radius: 15px;         /* скруглённые углы */
+  padding: 15px 15px;          /* внутренние отступы (внутри кнопки) */
+  font-size: 20px;             /* размер текста */
+  text-align: left;            /* выравнивание текста влево */
+  width: 900px;                /* ширина элемента */
+  cursor: pointer;             /* курсор "рука" при наведении */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* лёгкая тень под элементом */
+  text-decoration: none;       /* убирает подчёркивания */
+  color: black;                /* чёрный текст */
+
 }
 
-a.button {
-  display: block;
-  background-color: #d9d9d9;
-  border: none;
-  border-radius: 15px;
-  padding: 15px 15px;
-  font-size: 20px;
-  text-align: left;
-  width: 900px;
-  cursor: pointer;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-  text-decoration: none; /* убирает подчёркивание */
-  color: black;          /* делает текст чёрным */
-}
-
-a.button:hover {
+/* Эффект наведения для button */
+.home_page button.buttonProgaI:hover {
   background-color: #c4c4c4;
 }
 
-a.button strong {
-  display: block;
-  font-size: 20px;
-  color: #232222;
+.home_page .buttonProgaII{
+
+  display: block;              /* делает элемент блочным — занимает всю строку */
+  background-color: #d9d9d9;   /* цвет фона */
+  border: none;                /* убирает рамку */
+  border-radius: 15px;         /* скруглённые углы */
+  padding: 15px 15px;          /* внутренние отступы (внутри кнопки) */
+  font-size: 20px;             /* размер текста */
+  text-align: left;            /* выравнивание текста влево */
+  width: 900px;                /* ширина элемента */
+  cursor: pointer;             /* курсор "рука" при наведении */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* лёгкая тень под элементом */
+  text-decoration: none;       /* убирает подчёркивания */
+  color: black;                /* чёрный текст */
+
 }
 
-a.button small {
-  color: #555;
-  font-size: 14px;
+/* Эффект наведения для button */
+.home_page button.buttonProgaII:hover {
+  background-color: #c4c4c4;
+}
+
+
+.home_page main{
+
+  margin-top: 80px; /* расстояние между header и первой кнопкой */
+  display: flex;
+  flex-direction: column;
+  align-items: left; /* выравнивает кнопки по центру */
+  gap: 20px; /* расстояние между кнопками */
+  margin-right:250px; /* отступ слева от края страницы */
+
 }
