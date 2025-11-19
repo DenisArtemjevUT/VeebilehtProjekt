@@ -1,34 +1,35 @@
-<!DOCTYPE html> <!-- сообщает браузеру, что это HTML5 -->
+<!DOCTYPE html>
 <html lang="et"> <!-- весь документ, et для поиска -->
 <head> <!-- служебная часть: заголовок, кодировка, подключение CSS -->
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
-    <title>informatikaa Arhiiv</title>
+    <link rel="stylesheet" href="./style.css">
+    <title>Kontrolltööd</title>
 </head>
 
 <!-- ОДИН body  -->
-<body class="home_page">
+<body class="progaKT_page">
 
     <header> <!-- Это верхняя часть страницы (шапка).-->
+        <h4 class="custom-title">Kontrolltööd</h4>
     </header>
 
     <!-- Основной контент главной страницы -->
     <main>
 
-        <button class="buttonProgaI" id="Programmeerimine_I">Programmeerimine I</button>
+        <button class="buttontagasi1" id="Tagasi1"> <-- Tagasi </button>
         <!-- Кнопка на странице -->
         <!-- class="button" — стиль кнопки (CSS)
         id="clickMeBtn" — нужен JavaScript, чтобы "найти" кнопку -->
 
-        <button class="buttonProgaII" id="Programmeerimine_II">Programmeerimine II</button>
-
-        
-
     </main>
+
+
 
     <!-- Подключаем внешний файл JavaScript -->
     <!-- Без этого JS не запустится -->
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
+
 
 </body>
 </html>
+

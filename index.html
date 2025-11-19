@@ -1,29 +1,35 @@
-<!DOCTYPE html>         <!-- сообщает браузеру, что это HTML5 -->
-<html lang="et">        <!-- весь документ -->
-<head>                  <!-- служебная часть: заголовок, кодировка, подключение CSS -->
-  <meta charset="UTF-8">
-  <link rel="stylesheet" href="style.css">
-  <title>Minu kursused</title>
+<!DOCTYPE html> <!-- сообщает браузеру, что это HTML5 -->
+<html lang="et"> <!-- весь документ, et для поиска -->
+<head> <!-- служебная часть: заголовок, кодировка, подключение CSS -->
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./style.css">
+    <title>informatikaa Arhiiv</title>
 </head>
-<body>
-    <header>   
+
+<!-- ОДИН body  -->
+<body class="home_page">
+
+    <header> <!-- Это верхняя часть страницы (шапка).-->
+        oilukyjmhng
     </header>
 
+    <!-- Основной контент главной страницы -->
     <main>
-    <a href="teine.html" class="button">
-  <strong>Programmeerimine I</strong><br>
-  <small>Kirjeldus:</small>
-    </a>
 
-    <a href="uus_lk.html" class="button">
-  <strong>Programmeerimine II</strong><br>
-  <small>Kirjeldus:</small>
-    </a>
+        <button class="buttonProgaI" id="Programmeerimine_I">Programmeerimine I</button>
+        <!-- Кнопка на странице -->
+        <!-- class="button" — стиль кнопки (CSS)
+        id="clickMeBtn" — нужен JavaScript, чтобы "найти" кнопку -->
+
+        <button class="buttonProgaII" id="Programmeerimine_II">Programmeerimine II</button>
+
+        
+
     </main>
 
+    <!-- Подключаем внешний файл JavaScript -->
+    <!-- Без этого JS не запустится -->
+    <script src="script.js"></script>
 
-
-<!-- то, что видно на странице -->
-  <p>See on  informatikaa eriala arhiiv .</p>
 </body>
 </html>

@@ -75,3 +75,141 @@ body {
   margin-right:250px; /* отступ слева от края страницы */
 
 }
+
+
+/* progaI.html */
+
+
+.proga1_page{
+  
+  background-color: #f2e4ff;
+
+}
+
+
+.proga1_page header{
+  background-color: #79c7e3;  /* голубой фон */
+  color: white;               /* белый текст */
+  text-align: center;         /* текст по центру */
+  padding: 1px  ;            /* отступ сверху и снизу */
+  font-size: 28px;            /* размер текста */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2); /* лёгкая тень снизу */
+  border-radius: 3px;         /* чуть закруглённые углы */
+}
+
+
+
+.proga1_page main{
+
+  margin-top: 80px; /* расстояние между header и первой кнопкой */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* выравнивает кнопки по центру */
+  gap: 20px; /* расстояние между кнопками */
+  margin-right:50px; /* отступ слева от края страницы */
+
+}
+
+.proga1_page button.buttonProgaIKontrolltöö{
+
+  display: block;              /* делает элемент блочным — занимает всю строку */
+  background-color: #d9d9d9;   /* цвет фона */
+  border: none;                /* убирает рамку */
+  border-radius: 15px;         /* скруглённые углы */
+  padding: 15px 15px;          /* внутренние отступы (внутри кнопки) */
+  font-size: 20px;             /* размер текста */
+  text-align: center;            /* выравнивание текста влево */
+  width: 800px;                /* ширина элемента */
+  cursor: pointer;             /* курсор "рука" при наведении */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* лёгкая тень под элементом */
+  text-decoration: none;       /* убирает подчёркивания */
+  color: black;                /* чёрный текст */
+
+}
+
+
+/* Эффект наведения для button */
+.proga1_page button.buttonProgaIKontrolltöö:hover {
+  background-color: #ffffff;
+}
+
+/* kontProgaI.html */
+
+.progaKT_page{
+  
+  background-color: #f2e4ff;
+
+}
+
+.progaKT_page header{
+  background-color: #79c7e3;  /* голубой фон */
+  color: white;               /* белый текст */
+  text-align: center;         /* текст по центру */
+  padding: 1px  ;            /* отступ сверху и снизу */
+  font-size: 28px;            /* размер текста */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2); /* лёгкая тень снизу */
+  border-radius: 3px;         /* чуть закруглённые углы */
+}
+
+
+
+.main{
+
+  margin-top: 80px; /* расстояние между header и первой кнопкой */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* выравнивает кнопки по центру */
+  gap: 20px; /* расстояние между кнопками */
+  margin-right:50px; /* отступ слева от края страницы */
+
+}
+
+.progaKT_page button.buttonProgaIKontrolltöö{
+
+  display: block;              /* делает элемент блочным — занимает всю строку */
+  background-color: #d9d9d9;   /* цвет фона */
+  border: none;                /* убирает рамку */
+  border-radius: 15px;         /* скруглённые углы */
+  padding: 15px 15px;          /* внутренние отступы (внутри кнопки) */
+  font-size: 20px;             /* размер текста */
+  text-align: center;            /* выравнивание текста влево */
+  width: 800px;                /* ширина элемента */
+  cursor: pointer;             /* курсор "рука" при наведении */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* лёгкая тень под элементом */
+  text-decoration: none;       /* убирает подчёркивания */
+  color: black;                /* чёрный текст */
+
+}
+
+
+
+
+/* just nuppud*/
+.progaKT_page button.buttontagasi1{
+
+  display: block;              /* делает элемент блочным — занимает всю строку */
+  background-color: #79c7e3;   /* цвет фона */
+  border: none;                /* убирает рамку */
+  border-radius: 3px;         /* скруглённые углы */
+  padding: 5px 5px;          /* внутренние отступы (внутри кнопки) */
+  font-size: 15px;             /* размер текста */
+  text-align: center;            /* выравнивание текста влево */
+  width: 100px;                /* ширина элемента */
+  height: 30px;               /* высота элемента */
+  cursor: pointer;             /* курсор "рука" при наведении */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* лёгкая тень под элементом */
+  text-decoration: none;       /* убирает подчёркивания */
+  color: rgb(255, 255, 255);                
+
+}
+
+/* Эффект наведения для button */
+.progaKT_page button.buttontagasi1:hover {
+  background-color: #4cb3f475;
+}
+
+main{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
