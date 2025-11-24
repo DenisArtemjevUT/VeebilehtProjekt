@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Andmeturve</title>
+</head>
+<style>
+    body{
+        margin:0;
+        font-family: system-ui, sans-serif;
+        background: rgb(225, 224, 224)
+    }
+    .box{
+        background: lightblue;
+        padding: 20px; /*внутренний отступ*/
+        margin: 20px;  /*Внешний отступ*/
+    }
+   
+    .top-bar {
+        background: #86cfe8;
+        height: 100px;
+        position: relative;
+
+        }
+    
+    .back-button {
+        position:absolute;
+        left:16px;
+        top:18px;
+
+        width:38px;
+        height:38px;
+        background: rgba(255,255,255,0.45);
+        border-radius:12px;
+
+        display:flex;
+        align-items:center;
+        justify-content:center;
+
+        font-size:22px;
+        font-weight:700;
+        color:#0b2230;
+        cursor:pointer;
+        user-select:none; /*делает ее кликабельный*/
+    }
+
+    .title-pill {
+        position:absolute;
+        left:50%;
+        top:18px;
+        transform:translateX(-50%);
+
+        background:#e9edf0;
+        padding:12px 28px;
+        border-radius:999px;
+
+        font-size:17px;
+        font-weight:500;
+        color:#1f2a33;
+
+        box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+        white-space:nowrap;
+    }
+
+</style>
+
+<body>
+    <div class="top-bar" >
+        <div class="back-button">&#8592;</div>
+        <div class="title-pill"> Andmeturve</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
