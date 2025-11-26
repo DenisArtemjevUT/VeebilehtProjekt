@@ -1,16 +1,16 @@
-// Nupp&Кнопка Programmeerimine I (arhiiv.html)
+// Nupp&Кнопка Programmeerimine I 
 const btnProgaI = document.getElementById("Programmeerimine_I");
 if (btnProgaI) {
     btnProgaI.addEventListener("click", function () {
-        window.location.href = "./progaI.html";
+       window.location.href = "./Programmeerimine_1/progaI.html";
     });
 }
 
-// Nupp&Кнопка Programmeerimine II (arhiiv.html)
+// Nupp&Кнопка Programmeerimine II 
 const btnProgaII = document.getElementById("Programmeerimine_II");
 if (btnProgaII) {
     btnProgaII.addEventListener("click", function () {
-        window.location.href = "./progaII.html";
+        window.location.href = "./Programmeerimine_2/progaII.html";
     });
 }
 
@@ -31,11 +31,33 @@ if (btnTagasi1) {
     });
 }
 
+
+
+
+
+//  Nupp&Кнопка Kontrolltöö (progaII.html)
+const btnKontroll2 = document.getElementById("Prog2kt_II");
+if (btnKontroll2) {
+    btnKontroll2.addEventListener("click", function () {
+        window.location.href = "./proga2Kt.html";
+    });
+}
+
+
+//  Nupp&Кнопка Tagasi (kontoProgaI.html)
+const btnTagasi2 = document.getElementById("Tagasi2");
+if (btnTagasi2) {
+    btnTagasi2.addEventListener("click", function () {
+        window.location.href = "./progaII.html";
+    });
+}
+
+
 // Nupp tagasi avalehele (index.html) – abloend / avloend
 const btnTagasiIndex = document.getElementById("TagasiIndex");
 if (btnTagasiIndex) {
     btnTagasiIndex.addEventListener("click", function () {
-        window.location.href = "./index.html";
+        window.location.href = "../index.html";
     });
 }
 
@@ -124,6 +146,31 @@ const btnOopKT2 = document.getElementById("OopKT2");
 if (btnOopKT2) {
     btnOopKT2.addEventListener("click", function () {
         window.location.href = "./oop_materjal_kt2.html";
+    });
+}
+
+
+//Andmebaasid
+const andmebaasidI = document.getElementById("AndmeU");
+if (andmebaasidI) {
+    andmebaasidI.addEventListener("click", function () {
+        window.location.href = "./abloend.html";
+    });
+}
+
+const Aara = document.getElementById("Aara");
+if (Aara) {
+    Aara.addEventListener("click", function () {
+        window.location.href = "./aarloend.html";
+    });
+}
+
+
+// OOP loend
+const btnOop = document.getElementById("Oop");
+if (btnOop) {
+    btnOop.addEventListener("click", function () {
+        window.location.href = "./ooploend.html";
     });
 }
 

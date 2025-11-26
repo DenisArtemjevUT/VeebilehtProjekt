@@ -10,26 +10,31 @@
 <body class="home_page">
 
     <header> <!-- Это верхняя часть страницы (шапка).-->
-        
+        <div class="title-pill">Arhiiv</div>
     </header>
 
     <!-- Основной контент главной страницы -->
     <main>
 
-        <button class="buttonProgaI" id="Programmeerimine_I">Programmeerimine I</button>
-        <!-- Кнопка на странице -->
-        <!-- class="button" — стиль кнопки (CSS)
-        id="clickMeBtn" — нужен JavaScript, чтобы "найти" кнопку -->
+        <div class="home-card" id="AndmeU">Andmebaasid</div>
 
-        <button class="buttonProgaII" id="Programmeerimine_II">Programmeerimine II</button>
+        <div class="home-card" id="Aara">Arvuti arhitektuur ja riistvara I</div>
 
-        
+      
+        <div class="home-card" id="Programmeerimine_I">Programmeerimine I</div>
+
+        <div class="home-card" id="Programmeerimine_II">Programmeerimine II</div>
+
+
+        <div class="home-card" id="Oop">OOP</div>
+
 
     </main>
 
     <!-- Подключаем внешний файл JavaScript -->
     <!-- Без этого JS не запустится -->
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
+
 
 </body>
 </html>
