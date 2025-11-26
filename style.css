@@ -753,7 +753,7 @@ body {
 }
 
 .aar_page main {
-    margin: 50px auto 40px авто;
+    margin: 50px auto 40px auto;
     max-width: 1200px;
     width: 90%;
     display: block;
