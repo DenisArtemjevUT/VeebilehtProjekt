@@ -71,9 +71,9 @@ body {
   margin-top: 80px; /* расстояние между header и первой кнопкой */
   display: flex;
   flex-direction: column;
-  align-items: left; /* выравнивает кнопки по центру */
+  align-items: center; /* выравнивает кнопки по центру */
   gap: 20px; /* расстояние между кнопками */
-  margin-right:250px; /* отступ слева от края страницы */
+  margin-right:0px; /* отступ слева от края страницы */
 
 }
 
