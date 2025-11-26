@@ -19,7 +19,7 @@ if (btnProgaII) {
 const btnKontroll = document.getElementById("Progk_I");
 if (btnKontroll) {
     btnKontroll.addEventListener("click", function () {
-        window.location.href = "./kontProgaI.html";
+        window.location.href = "./progaIKt.html";
     });
 }
 
@@ -30,8 +30,6 @@ if (btnTagasi1) {
         window.location.href = "./progaI.html";
     });
 }
-
-
 
 
 
@@ -129,7 +127,7 @@ if (btnAarEksam2021B) {
 const btnTagasiOopLoend = document.getElementById("TagasiOopLoend");
 if (btnTagasiOopLoend) {
     btnTagasiOopLoend.addEventListener("click", function () {
-        window.location.href = "./ooploend.html";
+        window.location.href = "./OOP/ooploend.html";
     });
 }
 
@@ -170,7 +168,7 @@ if (Aara) {
 const btnOop = document.getElementById("Oop");
 if (btnOop) {
     btnOop.addEventListener("click", function () {
-        window.location.href = "./ooploend.html";
+        window.location.href = "./OOP/ooploend.html"; 
     });
 }
 

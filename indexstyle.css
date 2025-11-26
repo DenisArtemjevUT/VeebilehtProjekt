@@ -1,25 +1,25 @@
-/* Общие стили — работают на всех страницах */
+/* Общие стили — работают на всех страницах  
+   Üldised stiilid — töötavad kõigil lehtedel */
 body {
-    font-family: Arial, sans-serif;
+    font-family: Arial, sans-serif; /* Шрифт текста / Lehe font */
 }
 
-.all_pages{  
-
-    background-color: aliceblue;
+/* Фон главной страницы  
+   Pealehe taust */
+.home_page {
+    background-color: #f0f7ff;
 }
 
-
-.all_pages main{
-
-    margin-top: 80px;    
-    display: flex;         
-    flex-direction: column;
-    gap: 20px;    
-    align-items: center;          
-    margin-right: 0px;     
-
+/* Размещение кнопок на главной  
+   Nuppude asetus pealehel */
+.home_page main {
+    margin-top: 80px;      /* расстояние сверху / vahe ülaosast */
+    display: flex;         /* гибкий контейнер / paindlik konteiner */
+    flex-direction: column;/* вертикальное расположение / vertikaalne paigutus */
+    align-items: center;     /* выравнивание слева / joondus vasakule */
+    gap: 20px;             /* расстояние между элементами / elementide vahe */
+    margin-right: 0px;     /* без смещения / nihketa */
 }
-
 
 /* Сброс стандартных отступов браузера. */
 body {
@@ -28,8 +28,9 @@ body {
 }
 
 
-
-.all_pages .all_buttons {
+/*  Кнопка Programmeerimine I  
+    Programmeerimine I nupp */
+.home_page .buttonProgaI {
     display: block;             /* блочный элемент / plokk-element */
     background-color: #d9d9d9;  /* серый фон / hall taust */
     border: none;               /* без рамки / raamita */
@@ -46,15 +47,36 @@ body {
 
 /* Эффект наведения  
    Hiirega peale minemise efekt */
-.home_page button.all_buttons :hover {
+.home_page button.buttonProgaI:hover {
     background-color: #c4c4c4; /* затемнение / tumedam toon */
 }
 
+/*  Кнопка Programmeerimine II  
+    Programmeerimine II nupp */
+.home_page .buttonProgaII {
+    display: block;
+    background-color: #d9d9d9;
+    border: none;
+    border-radius: 15px;
+    padding: 15px 15px;
+    font-size: 20px;
+    text-align: left;
+    width: 900px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    text-decoration: none;
+    color: black;
+}
 
+/* Эффект наведения  
+   Hiirega peale minemise efekt */
+.home_page button.buttonProgaII:hover {
+    background-color: #c4c4c4;
+}
 
 /* Новые овальные карточки-кнопки  
    Uued ovaalsed kaardid-nupud */
-.all_pages .all_buttons  {
+.home_page .home-card {
     background: #e9edf0;        /* светлый фон / hele taust */
     padding: 16px 28px;         /* внутренний отступ / sisemine vahe */
     border-radius: 999px;       /* полностью круглая форма / väga ümar kuju */
@@ -71,14 +93,14 @@ body {
 
 /* Эффект наведения  
    Hiirega peale minemise efekt */
-.all_pages .all_buttons:hover {
+.home_page .home-card:hover {
     filter: brightness(1.02);   /* чуть светлее / pisut heledam */
     box-shadow: 0 4px 10px rgba(0,0,0,0.20); /* больше тень / suurem vari */
 }
 
 /* Табличка сверху с названием (главная страница)  
    Ülemine ovaalne pealkiri (pealeht) */
-.all_pages .title-pill {
+.home_page .title-pill {
     position: absolute;         /* абсолютное позиционирование / absoluutne asetus */
     left: 50%;                  /* по центру / keskele */
     top: 20px;                  /* 20px сверху / 20px ülalt */
@@ -147,33 +169,5 @@ body {
 
     box-shadow: 0 3px 6px rgba(0,0,0,0.15); /* vari all / тень снизу */
     white-space: nowrap;        /* rida ei murdu / строка не переносится */
-}
-
-
-.pill-card {
-    display: block;
-    background: #e9edf0;
-    padding: 14px 20px;               /* уменьшили высоту */
-    border-radius: 50px;              /* мягкая форма */
-    font-size: 18px;                  /* чуть меньше текст */
-    font-weight: 500;
-    color: #1f2a33;
-    width: 80%;
-    max-width: 300px;                 /* уменьшенная ширина */
-    margin: 20px 0;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.12); /* красивая мягкая тень */
-    cursor: pointer;
-    user-select: none;
-}
-
-
-/* Контейнер: карточка + кнопка */
-.file-block {
-    width: 80%;
-    max-width: 950px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start; /* кнопка остаётся слева, как на скриншоте */
 }
 

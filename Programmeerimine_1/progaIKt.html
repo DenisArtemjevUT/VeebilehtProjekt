@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <title>Kontrolltööd</title>
+
+    <link rel="stylesheet" href="../style.css">
+    <script src="../script.js" defer></script>
+</head>
+
+<body class="all_pages">
+
+    <div class="top-bar">
+        <div class="back-button" onclick="history.back()">←</div>
+        <div class="title-pill">Arhiiv</div>
+    </div>
+
+    <main class="page-content">
+
+        <!-- БЛОК: карточка + кнопка -->
+        <div class="file-block">
+
+            <!-- Большая карточка -->
+            <div class="open-file-btn eksam-label">Eksami I osa</div>
+
+            <!-- Кнопка Ava fail -->
+            <a class="open-file-btn"
+               href="Kontrolltöö1ülesanded.pdf"
+               target="_blank">
+               Ava fail
+            </a>
+
+        </div>
+
+        <!-- PDF -->
+        <div class="pdf-frame-wrapper">
+            <object class="pdf-frame"
+                    data="Kontrolltöö1ülesanded.pdf"
+                    type="application/pdf">
+                <p>Sinu brauser ei toeta PDF-i.
+                    <a href="Kontrolltöö1ülesanded.pdf" target="_blank">Ava fail</a>
+                </p>
+            </object>
+        </div>
+
+    </main>
+
+</body>
+</html>
