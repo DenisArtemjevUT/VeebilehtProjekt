@@ -149,17 +149,17 @@ if (btnOopKT2) {
 
 
 //Andmebaasid
-const andmebaasidI = document.getElementById("AndmeU");
+const andmebaasidI = document.getElementById("Andme");
 if (andmebaasidI) {
     andmebaasidI.addEventListener("click", function () {
-        window.location.href = "./abloend.html";
+        window.location.href = "./Andmebaasid/abloend.html";
     });
 }
 
 const Aara = document.getElementById("Aara");
 if (Aara) {
     Aara.addEventListener("click", function () {
-        window.location.href = "./aarloend.html";
+        window.location.href = "./AAR/aarloend.html";
     });
 }
 
@@ -172,6 +172,14 @@ if (btnOop) {
     });
 }
 
+
+// Anmdeturve
+const btAdme = document.getElementById("Anmdeturve");
+if (btAdme) {
+    btAdme.addEventListener("click", function () {
+        window.location.href = "./Anmdeturve/avloend.html"; 
+    });
+}
 
 /*  
 ============================================================
