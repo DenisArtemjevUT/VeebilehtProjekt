@@ -1,787 +1,199 @@
-/* Общие стили — работают на всех страницах */
+
+
 body {
     font-family: Arial, sans-serif;
+    margin: 0;
 }
+
+/* Контейнер для контента всех страниц */
+.page-content {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+/*                PEA LEHT                */
+
 
 /* Уникальные столько для ГЛАВНОЙ страницы, peamine leht */
 .home_page {
     background-color: #f0f7ff;
-
 }
 
-
-.home_page header{
-  background-color: #79c7e3;  /* голубой фон */
-  color: white;               /* белый текст */
-  text-align: center;         /* текст по центру */
-  padding: 40px 0;            /* отступ сверху и снизу */
-  font-size: 28px;            /* размер текста */
-  box-shadow: 0 2px 6px rgba(0,0,0,0.2); /* лёгкая тень снизу */
-  border-radius: 3px;         /* чуть закруглённые углы */
+.home_page header {
+    background-color: #79c7e3;
+    color: white;
+    text-align: center;
+    padding: 40px 0;
+    font-size: 28px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    border-radius: 3px;
 }
 
 /* старые кнопки — остаются нетронутые */
-.home_page .buttonProgaI{
-
-  display: block;              /* делает элемент блочным — занимает всю строку */
-  background-color: #d9d9d9;   /* цвет фона */
-  border: none;                /* убирает рамку */
-  border-radius: 15px;         /* скруглённые углы */
-  padding: 15px 15px;          /* внутренние отступы (внутри кнопки) */
-  font-size: 20px;             /* размер текста */
-  text-align: left;            /* выравнивание текста влево */
-  width: 900px;                /* ширина элемента */
-  cursor: pointer;             /* курсор "рука" при наведении */
-  box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* лёгкая тень под элементом */
-  text-decoration: none;       /* убирает подчёркивания */
-  color: black;                /* чёрный текст */
-
+.home_page .buttonProgaI,
+.home_page .buttonProgaII {
+    display: block;
+    background-color: #d9d9d9;
+    border: none;
+    border-radius: 15px;
+    padding: 15px 15px;
+    font-size: 20px;
+    text-align: left;
+    width: 900px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    text-decoration: none;
+    color: black;
 }
 
-/* Эффект наведения для button */
-.home_page button.buttonProgaI:hover {
-  background-color: #c4c4c4;
-}
-
-.home_page .buttonProgaII{
-
-  display: block;              /* делает элемент блочным — занимает всю строку */
-  background-color: #d9d9d9;   /* цвет фона */
-  border: none;                /* убирает рамку */
-  border-radius: 15px;         /* скруглённые углы */
-  padding: 15px 15px;          /* внутренние отступы (внутри кнопки) */
-  font-size: 20px;             /* размер текста */
-  text-align: left;            /* выравнивание текста влево */
-  width: 900px;                /* ширина элемента */
-  cursor: pointer;             /* курсор "рука" при наведении */
-  box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* лёгкая тень под элементом */
-  text-decoration: none;       /* убирает подчёркивания */
-  color: black;                /* чёрный текст */
-
-}
-
-/* Эффект наведения для button */
+.home_page button.buttonProgaI:hover,
 .home_page button.buttonProgaII:hover {
-  background-color: #c4c4c4;
+    background-color: #c4c4c4;
 }
-
-
-.home_page main{
-
-  margin-top: 80px; /* расстояние между header и первой кнопкой */
-  display: flex;
-  flex-direction: column;
-  align-items: center; /* выравнивает кнопки по центру */
-  gap: 20px; /* расстояние между кнопками */
-  margin-right:0px; /* отступ слева от края страницы */
-
-}
-
-
 
 .home_page .home-card {
     background: #e9edf0;
     padding: 16px 28px;
     border-radius: 999px;
-
     font-size: 20px;
     font-weight: 500;
     color: #1f2a33;
-
     box-shadow: 0 3px 6px rgba(0,0,0,0.15);
     margin-bottom: 25px;
-
     cursor: pointer;
     user-select: none;
-
-    width: 900px;   /* ширина как у старых кнопок */
+    width: 900px;
     text-align: left;
 }
 
-/* hover — такой же, как в aarloend */
 .home_page .home-card:hover {
     filter: brightness(1.02);
     box-shadow: 0 4px 10px rgba(0,0,0,0.20);
 }
 
-
-/* Title-pill для главной страницы */
+/* tabletki pealkiri */
 .home_page .title-pill {
     position: absolute;
     left: 50%;
     top: 20px;
     transform: translateX(-50%);
-
     background: #e9edf0;
     padding: 12px 28px;
     border-radius: 999px;
-
     font-size: 20px;
     font-weight: 500;
-    color: #1f2a33;
-
     box-shadow: 0 3px 6px rgba(0,0,0,0.15);
     white-space: nowrap;
-    display: inline-block;
 }
 
 
-/* progaI.html */
+/*      TOP-BAR KÕIGILE LEHTDELE  */
 
 
-
-
-.proga1_page {
-    background: rgb(225, 224, 224);
-    margin: 0;
-}
-
-/* верхняя панель */
-.proga1_page .top-bar {
+.top-bar {
     background: #86cfe8;
     height: 100px;
     position: relative;
     z-index: 10;
 }
 
-/* стрелка назад */
-.proga1_page .back-button {
+.back-button {
     position: absolute;
     left: 16px;
     top: 18px;
-
     width: 38px;
     height: 38px;
     background: rgba(255,255,255,0.45);
     border-radius: 12px;
-
     display: flex;
     align-items: center;
     justify-content: center;
-
     font-size: 22px;
     font-weight: 700;
     color: #0b2230;
     cursor: pointer;
     user-select: none;
-
     z-index: 20;
 }
 
-/* таблетка-заголовок */
-.proga1_page .title-pill {
+.title-pill {
     position: absolute;
     left: 50%;
     top: 18px;
     transform: translateX(-50%);
-
     background: #e9edf0;
     padding: 12px 28px;
     border-radius: 999px;
-
     font-size: 17px;
     font-weight: 500;
     color: #1f2a33;
-
     box-shadow: 0 3px 6px rgba(0,0,0,0.15);
     white-space: nowrap;
-
     z-index: 15;
 }
 
-/* основной блок */
-.proga1_page main {
-    margin: 50px auto 40px auto;
-    max-width: 900px;
-    padding: 0 16px;
-    display: block;
-}
 
-/* карточки */
-.proga1_page .material-card {
-    background:#e9edf0;
-    padding:14px 28px;
-    border-radius:999px;
+/*                UNIVERSALNE KAARDID                */
 
-    font-size:16px;
-    font-weight:500;
-    color:#1f2a33;
 
-    box-shadow:0 3px 6px rgba(0,0,0,0.15);
-    margin-bottom:20px;
-
-    cursor:pointer;
-    user-select:none;
-}
-
-/* hover эффект */
-.proga1_page .material-card:hover {
-    filter:brightness(1.02);
-    box-shadow:0 4px 10px rgba(0,0,0,0.20);
-}
-
-/* kontProgaI.html */
-
-
-/* ================================================================= */
-/*  Programmeerimine I – Kontrolltööd (kontProgaI.html)    */
-/* ================================================================= */
-
-.progaKT_page {
-    background: rgb(225, 224, 224);
-    margin: 0;
-}
-
-/* ülemine sinine riba */
-.progaKT_page .top-bar {
-    background: #86cfe8;
-    height: 100px;
-    position: relative;
-    z-index: 10;
-}
-
-/* tagasi-nupp */
-.progaKT_page .back-button {
-    position: absolute;
-    left: 16px;
-    top: 18px;
-
-    width: 38px;
-    height: 38px;
-    background: rgba(255,255,255,0.45);
-    border-radius: 12px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    font-size: 22px;
-    font-weight: 700;
-    color: #0b2230;
-    cursor: pointer;
-    user-select: none;
-
-    z-index: 20;
-}
-
-/* tableti kujuline pealkiri */
-.progaKT_page .title-pill {
-    position: absolute;
-    left: 50%;
-    top: 18px;
-    transform: translateX(-50%);
-
-    background: #e9edf0;
-    padding: 12px 28px;
-    border-radius: 999px;
-
-    font-size: 17px;
-    font-weight: 500;
-    color: #1f2a33;
-
-    box-shadow: 0 3px 6px rgba(0,0,0,0.15);
-    white-space: nowrap;
-
-    z-index: 15;
-}
-
-/* põhisisu konteiner */
-.progaKT_page .material-view-main {
-    margin: 50px auto 40px auto;
-    max-width: 1000px;
-    padding: 0 16px;
-}
-
-/* valge kaardipealkiri */
-.progaKT_page .material-header {
-    background: #e9edf0;
-    border-radius: 999px;
-    padding: 14px 28px;
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    box-shadow: 0 3px 6px rgba(0,0,0,0.15);
-    margin-bottom: 20px;
-}
-
-.progaKT_page .material-title {
-    font-size: 16px;
-    font-weight: 500;
-    color: #1f2a33;
-}
-
-/* failinupu stiil */
-.progaKT_page .open-file-btn {
-    display: inline-block;
-    margin-bottom: 20px;
-
-    background: #e9edf0;
-    padding: 10px 20px;
-    border-radius: 999px;
-    text-decoration: none;
-
-    color: #1f2a33;
-    font-size: 15px;
-
-    box-shadow: 0 3px 6px rgba(0,0,0,0.15);
-}
-
-.progaKT_page .open-file-btn:hover {
-    filter: brightness(1.03);
-    box-shadow: 0 4px 10px rgba(0,0,0,0.20);
-}
-
-.proga1_page {
-    background: rgb(225, 224, 224);
-    margin: 0;
-}
-
-/* верхняя панель */
-.proga1_page .top-bar {
-    background: #86cfe8;
-    height: 100px;
-    position: relative;
-    z-index: 10;
-}
-
-/* стрелка назад */
-.proga1_page .back-button {
-    position: absolute;
-    left: 16px;
-    top: 18px;
-
-    width: 38px;
-    height: 38px;
-    background: rgba(255,255,255,0.45);
-    border-radius: 12px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    font-size: 22px;
-    font-weight: 700;
-    color: #0b2230;
-    cursor: pointer;
-    user-select: none;
-
-    z-index: 20;
-}
-
-/* таблетка-заголовок */
-.proga1_page .title-pill {
-    position: absolute;
-    left: 50%;
-    top: 18px;
-    transform: translateX(-50%);
-
-    background: #e9edf0;
-    padding: 12px 28px;
-    border-radius: 999px;
-
-    font-size: 17px;
-    font-weight: 500;
-    color: #1f2a33;
-
-    box-shadow: 0 3px 6px rgba(0,0,0,0.15);
-    white-space: nowrap;
-
-    z-index: 15;
-}
-
-/* основной блок */
-.proga1_page main {
-    margin: 50px auto 40px auto;
-    max-width: 900px;
-    padding: 0 16px;
-    display: block;
-}
-
-/* карточки */
-.proga1_page .material-card {
-    background:#e9edf0;
-    padding:14px 28px;
-    border-radius:999px;
-
-    font-size:16px;
-    font-weight:500;
-    color:#1f2a33;
-
-    box-shadow:0 3px 6px rgba(0,0,0,0.15);
-    margin-bottom:20px;
-
-    cursor:pointer;
-    user-select:none;
-}
-
-/* hover эффект */
-.proga_page .material-card:hover {
-    filter:brightness(1.02);
-    box-shadow:0 4px 10px rgba(0,0,0,0.20);
-}
-
-
-/* just nuppud*/
-.progaKT_page button.buttontagasi1{
-
-  display: block;              /* делает элемент блочным — занимает всю строку */
-  background-color: #79c7e3;   /* цвет фона */
-  border: none;                /* убирает рамку */
-  border-radius: 3px;         /* скруглённые углы */
-  padding: 5px 5px;          /* внутренние отступы (внутри кнопки) */
-  font-size: 15px;             /* размер текста */
-  text-align: center;            /* выравнивание текста влево */
-  width: 100px;                /* ширина элемента */
-  height: 30px;               /* высота элемента */
-  cursor: pointer;             /* курсор "рука" при наведении */
-  box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* лёгкая тень под элементом */
-  text-decoration: none;       /* убирает подчёркивания */
-  color: rgb(255, 255, 255);                
-
-}
-
-/* Эффект наведения для button */
-.progaKT_page button.buttontagasi1:hover {
-  background-color: #4cb3f475;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-/* proga2*/
-
-
-.proga2_page {
-    background: rgb(225, 224, 224);
-    margin: 0;
-}
-
-/* верхняя панель */
-.proga2_page .top-bar {
-    background: #86cfe8;
-    height: 100px;
-    position: relative;
-    z-index: 10;
-}
-
-/* стрелка назад */
-.proga2_page .back-button {
-    position: absolute;
-    left: 16px;
-    top: 18px;
-
-    width: 38px;
-    height: 38px;
-    background: rgba(255,255,255,0.45);
-    border-radius: 12px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    font-size: 22px;
-    font-weight: 700;
-    color: #0b2230;
-    cursor: pointer;
-    user-select: none;
-
-    z-index: 20;
-}
-
-/* таблетка-заголовок */
-.proga2_page .title-pill {
-    position: absolute;
-    left: 50%;
-    top: 18px;
-    transform: translateX(-50%);
-
-    background: #e9edf0;
-    padding: 12px 28px;
-    border-radius: 999px;
-
-    font-size: 17px;
-    font-weight: 500;
-    color: #1f2a33;
-
-    box-shadow: 0 3px 6px rgba(0,0,0,0.15);
-    white-space: nowrap;
-
-    z-index: 15;
-}
-
-/* основной блок */
-.proga2_page main {
-    margin: 50px auto 40px auto;
-    max-width: 900px;
-    padding: 0 16px;
-    display: block;
-}
-
-/* карточки */
-.proga2_page .material-card {
-    background:#e9edf0;
-    padding:14px 28px;
-    border-radius:999px;
-
-    font-size:16px;
-    font-weight:500;
-    color:#1f2a33;
-
-    box-shadow:0 3px 6px rgba(0,0,0,0.15);
-    margin-bottom:20px;
-
-    cursor:pointer;
-    user-select:none;
-}
-
-/* hover эффект */
-.proga2_page .material-card:hover {
-    filter:brightness(1.02);
-    box-shadow:0 4px 10px rgba(0,0,0,0.20);
-}
-
-
-
-/* porga2KT*/
-
-.progaKT2_page {
-    background: rgb(225, 224, 224);
-    margin: 0;
-}
-
-/* ülemine sinine riba */
-.progaKT2_page .top-bar {
-    background: #86cfe8;
-    height: 100px;
-    position: relative;
-    z-index: 10;
-}
-
-/* tagasi-nupp */
-.progaKT2_page .back-button {
-    position: absolute;
-    left: 16px;
-    top: 18px;
-
-    width: 38px;
-    height: 38px;
-    background: rgba(255,255,255,0.45);
-    border-radius: 12px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    font-size: 22px;
-    font-weight: 700;
-    color: #0b2230;
-    cursor: pointer;
-    user-select: none;
-
-    z-index: 20;
-}
-
-/* tableti kujuline pealkiri */
-.progaKT2_page .title-pill {
-    position: absolute;
-    left: 50%;
-    top: 18px;
-    transform: translateX(-50%);
-
-    background: #e9edf0;
-    padding: 12px 28px;
-    border-radius: 999px;
-
-    font-size: 17px;
-    font-weight: 500;
-    color: #1f2a33;
-
-    box-shadow: 0 3px 6px rgba(0,0,0,0.15);
-    white-space: nowrap;
-
-    z-index: 15;
-}
-
-/* põhisisu konteiner */
-.progaKT2_page .material-view-main {
-    margin: 50px auto 40px auto;
-    max-width: 1000px;
-    padding: 0 16px;
-}
-
-/* valge kaardipealkiri */
-.progaKT2_page .material-header {
-    background: #e9edf0;
-    border-radius: 999px;
-    padding: 14px 28px;
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    box-shadow: 0 3px 6px rgba(0,0,0,0.15);
-    margin-bottom: 20px;
-}
-
-.progaKT2_page .material-title {
-    font-size: 16px;
-    font-weight: 500;
-    color: #1f2a33;
-}
-
-/* failinupu stiil */
-.progaKT2_page .open-file-btn {
-    display: inline-block;
-    margin-bottom: 20px;
-
-    background: #e9edf0;
-    padding: 10px 20px;
-    border-radius: 999px;
-    text-decoration: none;
-
-    color: #1f2a33;
-    font-size: 15px;
-
-    box-shadow: 0 3px 6px rgba(0,0,0,0.15);
-}
-
-.progaKT2_page .open-file-btn:hover {
-    filter: brightness(1.03);
-    box-shadow: 0 4px 10px rgba(0,0,0,0.20);
-}
-
-
-
-/* just nuppud*/
-.progaKT2_page button.buttontagasi1{
-
-  display: block;              /* делает элемент блочным — занимает всю строку */
-  background-color: #79c7e3;   /* цвет фона */
-  border: none;                /* убирает рамку */
-  border-radius: 3px;         /* скруглённые углы */
-  padding: 5px 5px;          /* внутренние отступы (внутри кнопки) */
-  font-size: 15px;             /* размер текста */
-  text-align: center;            /* выравнивание текста влево */
-  width: 100px;                /* ширина элемента */
-  height: 30px;               /* высота элемента */
-  cursor: pointer;             /* курсор "рука" при наведении */
-  box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* лёгкая тень под элементом */
-  text-decoration: none;       /* убирает подчёркивания */
-  color: rgb(255, 255, 255);                
-
-}
-
-/* Эффект наведения для button */
-.progaKT2_page button.buttontagasi1:hover {
-  background-color: #4cb3f475;
-}
-
-
-
-
-
-
-
-
-/* aarloend */
-
-
-.aar_page {
-    font-family: system-ui, sans-serif;
-    background: rgb(225, 224, 224);
-    margin: 0;
-}
-
-.aar_page .top-bar {
-    background: #86cfe8;
-    height: 100px;
-    position: relative;
-    z-index: 10;
-}
-
-.aar_page .back-button {
-    position: absolute;
-    left: 16px;
-    top: 18px;
-
-    width: 38px;
-    height: 38px;
-    background: rgba(255, 255, 255, 0.45);
-    border-radius: 12px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    font-size: 22px;
-    font-weight: 700;
-    color: #0b2230;
-    cursor: pointer;
-    user-select: none;
-
-    z-index: 20;
-}
-
-.aar_page .title-pill {
-    position: absolute;
-    left: 50%;
-    top: 18px;
-    transform: translateX(-50%);
-
-    background: #e9edf0;
-    padding: 12px 28px;
-    border-radius: 999px;
-
-    font-size: 17px;
-    font-weight: 500;
-    color: #1f2a33;
-
-    box-shadow: 0 3px 6px rgba(0,0,0,0.15);
-    white-space: nowrap;
-
-    z-index: 15;
-}
-
-.aar_page main {
-    margin: 50px auto 40px auto;
-    max-width: 1200px;
-    width: 90%;
-    display: block;
-    padding: 0 16px;
-}
-
-.aar_page .material-card {
+.material-card {
     background: #e9edf0;
     padding: 14px 28px;
     border-radius: 999px;
-
     font-size: 16px;
     font-weight: 500;
     color: #1f2a33;
-
     box-shadow: 0 3px 6px rgba(0,0,0,0.15);
-    margin-bottom: 20px;
-
+    margin-bottom: 100px;
     cursor: pointer;
     user-select: none;
-
     width: 100%;
+    max-width: 900px;
 }
 
-.aar_page .material-card:hover {
+.material-card:hover {
     filter: brightness(1.02);
     box-shadow: 0 4px 10px rgba(0,0,0,0.20);
 }
 
-.pdf-frame-wrapper{ background:#e9edf0; padding:10px; border-radius:16px; box-shadow:0 3px 6px rgba(0,0,0,0.15); }
-.pdf-frame{ width:100%; height:600px; border:none; }
+
+/*                    PDF VAATE STIILID                      */
+
+
+.pdf-frame-wrapper {
+    background: #e9edf0;
+    padding: 10px;
+    border-radius: 16px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+}
+
+.pdf-frame {
+    width: 100%;
+    height: 600px;
+    border: none;
+}
+
+
+/*              NUPUD (Kontrolltöö tagasinupp)               */
+
+button.buttontagasi1 {
+    display: block;
+    background-color: #79c7e3;
+    border: none;
+    border-radius: 3px;
+    padding: 5px 5px;
+    font-size: 15px;
+    text-align: center;
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    color: white;
+}
+
+button.buttontagasi1:hover {
+    background-color: #4cb3f475;
+}
