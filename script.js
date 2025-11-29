@@ -4,14 +4,7 @@ if (btnProgaI) {
     btnProgaI.addEventListener("click", function () {
        window.location.href = "./Programmeerimine_1/progaI.html";
     });
-}
 
-// Nupp&Кнопка Programmeerimine II 
-const btnProgaII = document.getElementById("Programmeerimine_II");
-if (btnProgaII) {
-    btnProgaII.addEventListener("click", function () {
-        window.location.href = "./Programmeerimine_2/progaII.html";
-    });
 }
 
 
@@ -31,6 +24,20 @@ if (btnEks) {
     });
 
 }
+
+
+// ------------------------------------------------------------------- //
+
+
+// Nupp&Кнопка Programmeerimine II 
+const btnProgaII = document.getElementById("Programmeerimine_II");
+if (btnProgaII) {
+    btnProgaII.addEventListener("click", function () {
+        window.location.href = "./Programmeerimine_2/progaII.html";
+    });
+}
+
+
 //  Nupp&Кнопка Kontrolltöö (progaII.html)
 const btnKontroll2 = document.getElementById("Prog2kt_II");
 if (btnKontroll2) {
@@ -49,9 +56,10 @@ if (btnProgaEks2) {
 }
 
 
+// ------------------------------------------------------------------- //
 
 
-// Nupp tagasi avalehele (index.html) – abloend / avloend
+// Nupp tagasi avalehele (index.html) – abloend / avloend / proga I / proga II
 const btnTagasiIndex = document.getElementById("TagasiIndex");
 if (btnTagasiIndex) {
     btnTagasiIndex.addEventListener("click", function () {
@@ -69,6 +77,7 @@ if (btnAndmeKt) {
     });
 }
 
+
 // Kast „Eksamid “ (andmebaasid loend)
 const btnAbEksami2 = document.getElementById("AndmebaasidEks");
 if (btnAbEksami2) {
@@ -76,53 +85,6 @@ if (btnAbEksami2) {
         window.location.href = "./eksamid.html";
     });
 }
-
-
-
-// Kast „Andmeturve eksam 01.06.2023“ (andmeturve loend)
-const btnAvEksami1 = document.getElementById("AndmedutveEks");
-if (btnAvEksami1) {
-    btnAvEksami1.addEventListener("click", function () {
-        window.location.href = "./aveksamid.html";
-    });
-}
-
-
-
-// Kast „Kontrolltöö (AAR loend)
-const btnAarKt = document.getElementById("AndmedurveKt");
-if (btnAarKt) {
-    btnAarKt.addEventListener("click", function () {
-        window.location.href = "./Aarkontrolltööd.html";
-    });
-}
-
-// Kast „Kontrolltöö (AAR loend)
-const btnAarEks = document.getElementById("AndmedutveEks");
-if (btnAarEks) {
-    btnAarEks.addEventListener("click", function () {
-        window.location.href = "./AarEksam.html";
-    });
-}
-
-
-
-// Kast 1. KT (OOP loend)
-const btnOopKT1 = document.getElementById("OOPKt");
-if (btnOopKT1) {
-    btnOopKT1.addEventListener("click", function () {
-        window.location.href = "./oop_materjal_kt1.html";
-    });
-}
-
-// Kast 2. KT (OOP loend)
-const btnOopKT2 = document.getElementById("OopKT2");
-if (btnOopKT2) {
-    btnOopKT2.addEventListener("click", function () {
-        window.location.href = "./oop_materjal_kt2.html";
-    });
-}
-
 
 //Andmebaasid
 const andmebaasidI = document.getElementById("Andme");
@@ -132,13 +94,48 @@ if (andmebaasidI) {
     });
 }
 
-const Aara = document.getElementById("Aara");
-if (Aara) {
-    Aara.addEventListener("click", function () {
+
+// ------------------------------------------------------------------- //
+
+
+
+// Kast „Andmeturve eksam 01.06.2023“ (andmeturve loend)
+const btnAvEksami1 = document.getElementById("AndmeturveEks");
+if (btnAvEksami1) {
+    btnAvEksami1.addEventListener("click", function () {
+        window.location.href = "./aveksamid.html";
+    });
+}
+
+
+// Kast KT (AAR loend)
+const btnAarKt = document.getElementById("AARKT");
+if (btnAarKt) {
+    btnAarKt.addEventListener("click", function () {
+        window.location.href = "./Aarkontrolltööd.html";
+    });
+}
+
+// Kast Eksam (AAR loend)
+const btnAarEks = document.getElementById("AAREks");
+if (btnAarEks) {
+    btnAarEks.addEventListener("click", function () {
+        window.location.href = "./AarEksam.html";
+    });
+}
+
+
+// Kast 3. (AAR loend)
+const Aar = document.getElementById("Aara");
+if (Aar) {
+    Aar.addEventListener("click", function () {
         window.location.href = "./AAR/aarloend.html";
     });
 }
 
+
+
+// ------------------------------------------------------------------- //
 
 // OOP loend
 const btnOop = document.getElementById("Oop");
@@ -147,6 +144,38 @@ if (btnOop) {
         window.location.href = "./OOP/ooploend.html"; 
     });
 }
+
+
+// Kast 1. KT (OOP loend)
+const btnOopKT1 = document.getElementById("OOPKT");
+if (btnOopKT1) {
+    btnOopKT1.addEventListener("click", function () {
+        window.location.href = "./oopkt.html";
+    });
+}
+
+// Kast 2. KT (OOP loend)
+const btnOopKT2 = document.getElementById("OOPKT2");
+if (btnOopKT2) {
+    btnOopKT2.addEventListener("click", function () {
+        window.location.href = "./oopkt2.html";
+    });
+}
+
+
+// Tagasi nupp (OOP)
+const btnTagasiOOPLoend = document.getElementById("TagasiOOPLoend");
+if (btnTagasiIndex) {
+    btnTagasiIndex.addEventListener("click", function () {
+        window.location.href = "../ooploend.html";
+    });
+}
+
+console.log("btnOopKT1 =", btnOopKT1)
+
+
+
+// ------------------------------------------------------------------- //
 
 
 // Anmdeturve
@@ -166,6 +195,9 @@ if (btAAR) {
         window.location.href = "./AAR/aar_materjal_eksam2021b..html"; 
     });
 }
+
+
+
 
 /*  
 ============================================================

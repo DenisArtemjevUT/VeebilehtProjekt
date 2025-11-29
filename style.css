@@ -1,5 +1,6 @@
 /* Общие стили — работают на всех страницах */
 body {
+    text-shadow: 0 0 8px rgba(255,255,255,0.6);
     font-family: Arial, sans-serif;
 }
 
@@ -174,6 +175,6 @@ body {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* кнопка остаётся слева, как на скриншоте */
+    align-items: flex-start; 
 }
 

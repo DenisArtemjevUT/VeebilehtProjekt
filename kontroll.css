@@ -1,7 +1,7 @@
 body{
     margin:0;
-    font-family: system-ui, sans-serif;
-    background: rgb(225, 224, 224);
+    font-family:  Arial, sans-serif;
+    background: #f0f7ff;
     }
 
 .top-bar {
@@ -32,20 +32,19 @@ body{
     }
 
 .title-pill {
-    position:absolute;
-    left:50%;
-    top:18px;
-    transform:translateX(-50%);
-    background:#e9edf0;
-    padding:12px 28px;
-    border-radius:999px;
-
-    font-size:17px;
-    font-weight:500;
-    color:#1f2a33;
-
+    position: absolute;         /* абсолютное позиционирование / absoluutne asetus */
+    left: 50%;                  /* по центру / keskele */
+    top: 20px;                  /* 20px сверху / 20px ülalt */
+    transform: translateX(-50%);/* точное центрирование / täpne keskjoondus */
+    background: #e9edf0;        /* светлый фон / hele taust */
+    padding: 12px 28px;         /* отступы / vahed */
+    border-radius: 999px;       /* круглая форма / ümar kuju */
+    font-size: 20px;
+    font-weight: 500;
+    color: #1f2a33;
     box-shadow: 0 3px 6px rgba(0,0,0,0.15);
-    white-space:nowrap;
+    white-space: nowrap;        /* не переносить строки / rida ei murdu */
+    display: inline-block;
         }
 
 .material-view-main {
