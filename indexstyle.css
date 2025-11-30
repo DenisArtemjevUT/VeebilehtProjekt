@@ -172,5 +172,12 @@ body {
 }
 
 
-
-
+/* UT logo in the top-left corner / TÜ logo vasakus ülanurgas */
+.ut-logo {
+    position: absolute;     /* фиксированное место / täpne positsioon */
+    left: 20px;             /* отступ слева / vasak vahe */
+    top: 20px;              /* отступ сверху / ülemine vahe */
+    height: 55px;           /* размер логотипа / logo kõrgus */
+    width: auto;            /* пропорции / proportsioonid */
+    z-index: 11;            /* поверх фона / taustast kõrgem */
+}
