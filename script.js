@@ -198,6 +198,74 @@ if (btAAR) {
 
 
 
+// ===============================
+// HAMBURGER MENÜÜ (ainult avalehel)
+// Stiil: sama loogika nagu teistel nuppudel (võta ID järgi, kontrolli olemasolu, lisa click)
+// ===============================
+
+const menuuNupp = document.getElementById("menuuNupp");
+const menuuKast = document.getElementById("menuuKast");
+const menuuTaust = document.getElementById("menuuTaust");
+const menuuSulge = document.getElementById("menuuSulge");
+
+// Avab külgmenüü
+function avaMenuu(){
+  // Kui mingit elementi ei ole (nt teistel lehtedel), siis ära tee midagi
+  if(!menuuNupp || !menuuKast || !menuuTaust) return;
+
+  // Tee menüü nähtavaks (CSS klass "avatud")
+  menuuKast.classList.add("avatud");
+  menuuTaust.classList.add("avatud");
+
+  // Keela lehe scroll, et taust ei liiguks menüü all
+  document.body.classList.add("menuu-avatud");
+
+  // Väike ligipääsetavuse info (pole kohustuslik, aga kasulik)
+  menuuKast.setAttribute("aria-hidden", "false");
+  menuuTaust.setAttribute("aria-hidden", "false");
+  menuuNupp.setAttribute("aria-expanded", "true");
+
+  // Pane fookus sulgemise nupule (mugav klaviatuuriga)
+  if(menuuSulge){
+    menuuSulge.focus();
+  }
+}
+
+// Sulgeb külgmenüü
+function sulgeMenuu(){
+  if(!menuuNupp || !menuuKast || !menuuTaust) return;
+
+  menuuKast.classList.remove("avatud");
+  menuuTaust.classList.remove("avatud");
+  document.body.classList.remove("menuu-avatud");
+
+  menuuKast.setAttribute("aria-hidden", "true");
+  menuuTaust.setAttribute("aria-hidden", "true");
+  menuuNupp.setAttribute("aria-expanded", "false");
+}
+
+// Kui hamburger nupp on olemas, lisa click (nagu teistel nuppudel)
+if(menuuNupp){
+  menuuNupp.addEventListener("click", avaMenuu);
+}
+
+// Kui X nupp on olemas, lisa click
+if(menuuSulge){
+  menuuSulge.addEventListener("click", sulgeMenuu);
+}
+
+// Kui taust (overlay) on olemas, siis taustale vajutades sulge menüü
+if(menuuTaust){
+  menuuTaust.addEventListener("click", sulgeMenuu);
+}
+
+// ESC klahviga sulgemine 
+document.addEventListener("keydown", function(e){
+  if(e.key === "Escape"){
+    sulgeMenuu();
+  }
+});
+
 
 /*  
 ============================================================
