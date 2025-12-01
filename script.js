@@ -1,4 +1,4 @@
-// Nupp&Кнопка Programmeerimine I 
+// Nupp Programmeerimine I 
 const btnProgaI = document.getElementById("Programmeerimine_I");
 if (btnProgaI) {
     btnProgaI.addEventListener("click", function () {
@@ -8,7 +8,7 @@ if (btnProgaI) {
 }
 
 
-//  Nupp&Кнопка Kontrolltöö (progaI.html)
+//  Nupp Kontrolltöö (progaI.html)
 const btnKontroll = document.getElementById("ProgKt");
 if (btnKontroll) {
     btnKontroll.addEventListener("click", function () {
@@ -16,7 +16,7 @@ if (btnKontroll) {
     });
 }
 
-//  Nupp&Кнопка Eksamid (progaI.html)
+//  Nupp Eksamid (progaI.html)
 const btnEks = document.getElementById("ProgEks");
 if (btnEks) {
     btnEks.addEventListener("click", function () {
@@ -29,7 +29,7 @@ if (btnEks) {
 // ------------------------------------------------------------------- //
 
 
-// Nupp&Кнопка Programmeerimine II 
+// Nupp Programmeerimine II 
 const btnProgaII = document.getElementById("Programmeerimine_II");
 if (btnProgaII) {
     btnProgaII.addEventListener("click", function () {
@@ -38,7 +38,7 @@ if (btnProgaII) {
 }
 
 
-//  Nupp&Кнопка Kontrolltöö (progaII.html)
+//  Nupp Kontrolltöö (progaII.html)
 const btnKontroll2 = document.getElementById("Prog2kt_II");
 if (btnKontroll2) {
     btnKontroll2.addEventListener("click", function () {
@@ -47,7 +47,7 @@ if (btnKontroll2) {
 }
 
 
-//  Nupp&Кнопка Eksamid (progaII.html)
+//  Nupp Eksamid (progaII.html)
 const btnProgaEks2 = document.getElementById("Prog2Eks");
 if (btnProgaEks2) {
     btnProgaEks2.addEventListener("click", function () {
@@ -86,7 +86,7 @@ if (btnAbEksami2) {
     });
 }
 
-//Andmebaasid
+//Andmebaasid (loend)
 const andmebaasidI = document.getElementById("Andme");
 if (andmebaasidI) {
     andmebaasidI.addEventListener("click", function () {
@@ -99,13 +99,7 @@ if (andmebaasidI) {
 
 
 
-// Kast „Andmeturve eksam 01.06.2023“ (andmeturve loend)
-const btnAvEksami1 = document.getElementById("AndmeturveEks");
-if (btnAvEksami1) {
-    btnAvEksami1.addEventListener("click", function () {
-        window.location.href = "./aveksamid.html";
-    });
-}
+
 
 
 // Kast KT (AAR loend)
@@ -197,11 +191,28 @@ if (btAAR) {
 }
 
 
+// Kast „Andmeturve eksam 01.06.2023“ (andmeturve loend)
+const btnAvEksami1 = document.getElementById("AndmeturveEks");
+if (btnAvEksami1) {
+    btnAvEksami1.addEventListener("click", function () {
+        window.location.href = "./aveksamid.html";
+    });
+}
 
-// ===============================
+/*
+Selles failis lisame erinevatele nuppudele klõpsu-käsitlejad. 
+Kood kontrollib enne igat tegevust, kas nupp üldse olemas on, 
+et vältida vigasid ja tagada, et sama script.js töötaks kõikidel lehtedel. 
+Kui nupp on olemas, lisatakse sellele klõpsu kuulaja, 
+mis suunab kasutaja õigesse HTML-lehte. 
+*/
+
+/*--------------------------------------------------------------------------------------------*/
+
+
 // HAMBURGER MENÜÜ (ainult avalehel)
 // Stiil: sama loogika nagu teistel nuppudel (võta ID järgi, kontrolli olemasolu, lisa click)
-// ===============================
+
 
 const menuuNupp = document.getElementById("menuuNupp");
 const menuuKast = document.getElementById("menuuKast");
@@ -267,28 +278,5 @@ document.addEventListener("keydown", function(e){
 });
 
 
-/*  
-============================================================
- ОБЪЯСНЕНИЕ (что делает этот код)
 
- В этом файле мы подключаем обработчики клика к разным кнопкам
- на разных страницах сайта. Код написан так, чтобы он был
- безопасным и работал на всех страницах, даже если какая-то
- кнопка отсутствует.
 
- ОБЩИЙ ПРИНЦИП ДЛЯ КАЖДОЙ КНОПКИ:
- 1) Найти кнопку по её id (document.getElementById).
- 2) Проверить, существует ли такая кнопка на странице.
-    - Если кнопки нет → пропускаем и не ломаем сайт.
-    - Если кнопка есть → выполняем следующий шаг.
- 3) "Прикрепить" к ней действие при клике (addEventListener).
-    При клике — переходим на нужную HTML-страницу.
-
- Это делается для того, чтобы:
- - один script.js можно было использовать на всех страницах;
- - не было ошибок "Cannot read properties of null";
- - кнопки всегда работали только там, где они реально есть;
- - сайт был стабильным, безопасным и удобным для расширения.
-
-============================================================
-*/
